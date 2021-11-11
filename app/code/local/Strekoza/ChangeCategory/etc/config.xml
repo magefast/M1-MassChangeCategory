@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Strekoza_ChangeCategory>
+            <version>1.1.1</version>
+        </Strekoza_ChangeCategory>
+    </modules>
+    <adminhtml>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <catalog>
+                            <children>
+                                <change_category>
+                                    <title>Mass Change Category</title>
+                                    <sort_order>1000</sort_order>
+                                </change_category>
+                            </children>
+                        </catalog>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    <global>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <catalog_category_tab_product>Strekoza_ChangeCategory_Adminhtml_Block_Catalog_Category_Tab_Product</catalog_category_tab_product>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+    </global>
+    <admin>
+        <routers>
+            <changecategory>
+                <use>admin</use>
+                <args>
+                    <module>Strekoza_ChangeCategory</module>
+                    <frontName>changecategory</frontName>
+                </args>
+            </changecategory>
+        </routers>
+    </admin>
+</config>
