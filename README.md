@@ -26,4 +26,4 @@ __Will add Selected products to Selected Target Category. Selected Products will
 
 
 ## Screen
-![Adminpanel](https://i.ibb.co/T88s7mG/s1.png)
+![Adminpanel](https://repository-images.githubusercontent.com/427163630/0d376795-656f-43d4-9186-59a24f0ec9b3)
