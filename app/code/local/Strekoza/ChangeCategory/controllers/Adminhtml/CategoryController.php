@@ -1,4 +1,7 @@
 <?php
+/**
+ * @author magefast@gmail.com www.magefast.com
+ */
 
 class Strekoza_ChangeCategory_Adminhtml_CategoryController extends Mage_Adminhtml_Controller_Action
 {
